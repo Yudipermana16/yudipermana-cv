@@ -5,82 +5,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Yudi Permana</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        h1 { color: #2c3e50; }
-        h2 { color: #34495e; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
-        ul { margin: 10px 0; }
-        li { margin-bottom: 5px; }
-        .section { margin-bottom: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left-column {
+            width: 35%;
+            background-color: #e0e0e0;
+            padding: 20px;
+            text-align: center;
+        }
+        .right-column {
+            width: 65%;
+            padding: 20px;
+            background-color: #1e2a44;
+            color: #fff;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #fff;
+        }
+        h3 {
+            font-size: 18px;
+            margin: 5px 0;
+            color: #fff;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            color: #000;
+        }
+        .right-column h2 {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+        p, li {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .contact-info img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .right-column ul li {
+            margin-bottom: 10px;
+        }
+        .right-column ul li strong {
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <h1>YUDI PERMANA</h1>
-    <h3>Database Administrator (DBA)</h3>
-    <p>Bogor, Indonesia</p>
+    <div class="container">
+        <div class="left-column">
+            <!-- Ganti src dengan URL gambar Anda di GitHub -->
+            <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+            
+            <div class="section">
+                <h2>Informasi Pribadi</h2>
+                <ul class="contact-info">
+                    <li><img src="https://img.icons8.com/material-outlined/24/000000/email.png" alt="Email"> permanayudhi16@gmail.com</li>
+                    <li><img src="https://img.icons8.com/material-outlined/24/000000/phone.png" alt="Phone"> +62 857-1049-6327</li>
+                    <li><img src="https://img.icons8.com/material-outlined/24/000000/instagram-new.png" alt="Instagram"> permanastudio.ps</li>
+                    <li><img src="https://img.icons8.com/material-outlined/24/000000/youtube-play.png" alt="YouTube"> Permana Studio Official</li>
+                    <li><img src="https://img.icons8.com/material-outlined/24/000000/marker.png" alt="Location"> Bogor, Indonesia</li>
+                </ul>
+            </div>
 
-    <div class="section">
-        <h2>Informasi Pribadi</h2>
-        <ul>
-            <li><strong>Email</strong>: permanayudhi16@gmail.com</li>
-            <li><strong>Nomor Telepon</strong>: +62 857-1049-6327</li>
-            <li><strong>Instagram</strong>: permanastudio.ps</li>
-            <li><strong>YouTube</strong>: Permana Studio Official</li>
-        </ul>
-    </div>
+            <div class="section">
+                <h2>Tentang Saya</h2>
+                <p>Saya seorang yang berpengalaman di bidang pengelolaan database dan pemeliharaan sistem berbasis web. Selain itu, saya juga aktif sebagai content creator di YouTube, dengan fokus pada pembuatan lagu, penulisan musik, serta konten kreatif lainnya. Saya terampil dalam mengelola proyek, berpikir kreatif, dan menyelesaikan masalah dengan pendekatan yang terstruktur.</p>
+            </div>
 
-    <div class="section">
-        <h2>Tentang Saya</h2>
-        <p>Saya seorang profesional di bidang pengelolaan database dan pemeliharaan sistem berbasis web. Saya memiliki keahlian dalam mengotomatisasi dan mengintegrasikan sistem menggunakan Google Spreadsheet dan Google Apps Script untuk meningkatkan efisiensi kerja. Selain itu, saya juga aktif sebagai content creator di YouTube, dengan fokus pada pembuatan lagu, penulisan musik, serta konten kreatif lainnya. Saya terampil dalam mengelola proyek, berpikir kreatif, dan menyelesaikan masalah dengan pendekatan yang terstruktur.</p>
-    </div>
+            <div class="section">
+                <h2>Pendidikan</h2>
+                <p><strong>Graduated (2010)</strong><br>Sekolah Menengah Kejuruan Akuntansi</p>
+            </div>
 
-    <div class="section">
-        <h2>Pendidikan</h2>
-        <ul>
-            <li><strong>Manager IT</strong><br>Lembaga Keuangan Syariah – KSPSS Baytul Ikhtiar, Bogor<br>2025</li>
-            <li><strong>Sarjana Akuntansi</strong><br>Sekolah Menengah Kejuruan Akuntansi, Bogor<br>2010</li>
-        </ul>
-    </div>
+            <div class="section">
+                <h2>Keterampilan Kreatif</h2>
+                <ul>
+                    <li>Pembuatan Konten (YouTube)</li>
+                    <li>Produksi Musik</li>
+                    <li>Penulisan Lagu</li>
+                    <li>Manajemen Proyek</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="section">
-        <h2>Pengalaman Kerja</h2>
-        <ul>
-            <li><strong>Staff IT</strong><br>Lembaga Keuangan Syariah – KSPSS Baytul Ikhtiar, Bogor<br>2022 – 2024<br>- Bertanggung jawab atas pemeliharaan perangkat lunak dan pengelolaan data.</li>
-            <li><strong>Data Engineer</strong><br>Lembaga Keuangan Syariah – KSPSS Baytul Ikhtiar, Bogor<br>2019 – 2021<br>- Mengelola dan mengoptimalkan sistem database untuk mendukung operasional.</li>
-            <li><strong>Staff R&D</strong><br>Lembaga Keuangan Syariah – KSPSS Baytul Ikhtiar, Bogor<br>2016 – 2018<br>- Melakukan riset dan pengembangan untuk meningkatkan efisiensi sistem.</li>
-            <li><strong>Expert Staff</strong><br>Water.org – Universal Access 100-0-100, Bogor<br>2012 – 2015<br>- Menyusun strategi pemasaran keuangan untuk mendukung program akses air bersih.</li>
-        </ul>
-    </div>
+        <div class="right-column">
+            <h1>YUDI PERMANA</h1>
+            <h3>Database Administrator (DBA)</h3>
 
-    <div class="section">
-        <h2>Keterampilan Teknis</h2>
-        <ul>
-            <li>Pengelolaan Database</li>
-            <li>Pemeliharaan Sistem Berbasis Web</li>
-            <li>Query Writing (SQL)</li>
-            <li>Google Spreadsheet</li>
-            <li>Google Apps Script (Otomatisasi & Integrasi)</li>
-        </ul>
-    </div>
+            <div class="section">
+                <h2>Pengalaman Kerja</h2>
+                <ul>
+                    <li>
+                        <strong>Manager IT</strong><br>
+                        Lembaga Keuangan Syariah – KSPSS Baytul Ikhtiar, Bogor<br>
+                        2025
+                    </li>
+                    <li>
+                        <strong>Staff IT</strong><br>
+                        Lembaga Keuangan Syariah – KSPSS Baytul Ikhtiar, Bogor<br>
+                        2022 – 2024<br>
+                        - Bertanggung jawab atas pemeliharaan perangkat lunak dan pengelolaan data.
+                    </li>
+                    <li>
+                        <strong>Data Engineer</strong><br>
+                        Lembaga Keuangan Syariah – KSPSS Baytul Ikhtiar, Bogor<br>
+                        2019 – 2021<br>
+                        - Mengelola dan mengoptimalkan sistem database untuk mendukung operasional.
+                    </li>
+                    <li>
+                        <strong>Staff R&D</strong><br>
+                        Lembaga Keuangan Syariah – KSPSS Baytul Ikhtiar, Bogor<br>
+                        2016 – 2018<br>
+                        - Melakukan riset dan pengembangan untuk meningkatkan efisiensi sistem.
+                    </li>
+                    <li>
+                        <strong>Expert Staff</strong><br>
+                        Water.org – Universal Access 100-0-100, Bogor<br>
+                        2012 – 2015<br>
+                        - Menyusun strategi pemasaran keuangan untuk mendukung program akses air bersih.
+                    </li>
+                    <li>
+                        <strong>Account Officer</strong><br>
+                        Kabupaten Bogor, Kota Bogor, Cicurug Sukabumi
+                    </li>
+                </ul>
+            </div>
 
-    <div class="section">
-        <h2>Keterampilan Kreatif & Soft Skills</h2>
-        <ul>
-            <li>Pembuatan Konten (YouTube)</li>
-            <li>Produksi Musik</li>
-            <li>Penulisan Lagu</li>
-            <li>Berpikir Kreatif</li>
-            <li>Pemecahan Masalah</li>
-            <li>Manajemen Proyek</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Area Pemasaran Keuangan</h2>
-        <ul>
-            <li>Kabupaten Bogor</li>
-            <li>Kota Bogor</li>
-            <li>Cicurug Sukabumi</li>
-        </ul>
+            <div class="section">
+                <h2>Keterampilan Teknis</h2>
+                <ul>
+                    <li>Pengelolaan Database</li>
+                    <li>Pemeliharaan Sistem Berbasis Web</li>
+                    <li>Query Writing (SQL)</li>
+                    <li>Google Spreadsheet</li>
+                    <li>Google Apps Script (Otomatisasi & Integrasi)</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -174,18 +174,95 @@
         header {
             background: linear-gradient(90deg, #1f2937, #4b5563);
             color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .navbar h1 {
+            font-size: 28px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #a5b4fc;
+        }
+
+        .hero {
             padding: 60px 20px;
+            background: #1f2937;
+            color: #fff;
             text-align: center;
         }
 
-        header h1 {
-            font-size: 40px;
+        .hero h2 {
+            font-size: 36px;
             margin-bottom: 10px;
         }
 
-        header h3 {
-            font-weight: 400;
-            font-size: 20px;
+        .hero p {
+            font-size: 18px;
+            color: #d1d5db;
+        }
+
+        .dashboard {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .dashboard h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .dashboard .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1 1 250px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
         }
 
         .container {
@@ -261,6 +338,41 @@
             display: block;
         }
 
+        .portfolio {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .portfolio h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 20px;
+        }
+
+        .slide {
+            min-width: 300px;
+            background: #f3f4f6;
+            padding: 20px;
+            border-radius: 10px;
+            scroll-snap-align: start;
+            flex-shrink: 0;
+        }
+
+        .slide h3 {
+            margin-bottom: 10px;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -272,14 +384,39 @@
 </head>
 <body>
     <header>
-        <h1>Yudi Permana</h1>
-        <h3>Database Administrator (DBA) & Content Creator</h3>
+        <div class="navbar">
+            <h1>Yudi Permana</h1>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
     </header>
 
-    <div class="container">
+    <section id="dashboard" class="dashboard">
+        <h2>Dashboard</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Statistik Proyek</h3>
+                <p>10+ Proyek selesai dalam bidang IT dan produksi konten.</p>
+            </div>
+            <div class="card">
+                <h3>Pengalaman</h3>
+                <p>7+ tahun pengalaman di dunia teknologi dan keuangan syariah.</p>
+            </div>
+            <div class="card">
+                <h3>Jaringan Profesional</h3>
+                <p>Terhubung dengan lebih dari 1.000 profesional di industri terkait.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv" class="container">
         <div class="left-column">
             <img src="profile.png" alt="Foto Profil">
-            <h2>Kontak</h2>
+            <h2>Informasi Pribadi</h2>
             <ul>
                 <li><img src="https://img.icons8.com/material-outlined/24/ffffff/email.png"> permanayudhi16@gmail.com</li>
                 <li><img src="https://img.icons8.com/material-outlined/24/ffffff/phone.png"> +62 857-1049-6327</li>
@@ -289,14 +426,14 @@
             </ul>
 
             <h2>Tentang Saya</h2>
-            <p>Saya berpengalaman dalam pengelolaan database dan sistem berbasis web. Aktif sebagai content creator, dengan fokus pada musik dan produksi konten kreatif. Memiliki kemampuan manajemen proyek, pemecahan masalah, dan berpikir strategis.</p>
+            <p>Saya seorang yang berpengalaman di bidang pengelolaan database dan pemeliharaan sistem berbasis web. Aktif juga sebagai content creator di YouTube, dengan fokus pada pembuatan lagu, penulisan musik, serta konten kreatif lainnya.</p>
 
             <h2>Pendidikan</h2>
-            <p><strong>SMK Akuntansi</strong><br>Lulus tahun 2010</p>
+            <p><strong>Graduated (2010)</strong><br>Sekolah Menengah Kejuruan<br>Akuntansi</p>
 
-            <h2>Kreativitas</h2>
+            <h2>Keterampilan Kreatif</h2>
             <ul>
-                <li>Pembuatan Konten</li>
+                <li>Pembuatan Konten (YouTube)</li>
                 <li>Produksi Musik</li>
                 <li>Penulisan Lagu</li>
                 <li>Manajemen Proyek</li>
@@ -306,27 +443,46 @@
         <div class="right-column">
             <h2>Pengalaman Kerja</h2>
             <ul>
-                <li><strong>Manager IT</strong> - KSPSS Baytul Ikhtiar (2025)</li>
-                <li><strong>Staff IT</strong> - KSPSS Baytul Ikhtiar (2022–2024)<br>- Pemeliharaan perangkat lunak dan data.</li>
-                <li><strong>Data Engineer</strong> - KSPSS Baytul Ikhtiar (2019–2021)<br>- Optimasi sistem database.</li>
-                <li><strong>Staff R&D</strong> - KSPSS Baytul Ikhtiar (2016–2018)<br>- Riset dan peningkatan efisiensi sistem.</li>
-                <li><strong>Expert Staff</strong> - Water.org (Bogor)<br>- Strategi keuangan program air bersih.</li>
-                <li><strong>Account Officer</strong> - Bogor & Sukabumi</li>
+                <li><strong>Manager IT</strong><br>Lembaga Keuangan Syariah – KSPSS Baytul Ikhtiar, Bogor (2025)</li>
+                <li><strong>Staff IT</strong><br>Lembaga Keuangan Syariah – KSPSS Baytul Ikhtiar, Bogor (2022 – 2024)</li>
+                <li><strong>Data Engineer</strong><br>Lembaga Keuangan Syariah – KSPSS Baytul Ikhtiar, Bogor (2019 – 2021)</li>
+                <li><strong>Staff R&D</strong><br>Lembaga Keuangan Syariah – KSPSS Baytul Ikhtiar, Bogor (2016 – 2018)</li>
+                <li><strong>Expert Staff</strong><br>Water.org – Universal Access 100-0-100, Bogor</li>
+                <li><strong>Account Officer</strong><br>Kabupaten Bogor, Kota Bogor, Cicurug Sukabumi</li>
             </ul>
 
-            <h2>Keahlian Teknis</h2>
+            <h2>Keterampilan Teknis</h2>
             <ul>
-                <li>Manajemen Database</li>
-                <li>Pemeliharaan Sistem Web</li>
-                <li>SQL Query Writing</li>
+                <li>Pengelolaan Database</li>
+                <li>Pemeliharaan Sistem Berbasis Web</li>
+                <li>Query Writing (SQL)</li>
                 <li>Google Spreadsheet</li>
-                <li>Google Apps Script</li>
+                <li>Google Apps Script (automatisasi & integrasi)</li>
             </ul>
         </div>
-    </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="slider">
+            <div class="slide">
+                <h3>Project A</h3>
+                <p>Sistem informasi keuangan syariah untuk koperasi berbasis web.</p>
+            </div>
+            <div class="slide">
+                <h3>Project B</h3>
+                <p>Aplikasi Android pencatatan keuangan untuk pelaku UMKM.</p>
+            </div>
+            <div class="slide">
+                <h3>Project C</h3>
+                <p>Video animasi edukasi keuangan berdurasi 3 menit.</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         &copy; 2025 Yudi Permana. All rights reserved.
     </footer>
 </body>
 </html>
+

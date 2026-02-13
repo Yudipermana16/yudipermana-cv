@@ -1,28 +1,4 @@
-.slider-container {
-    position: relative;
-    max-width: 1000px;
-    margin: 40px auto;
-    overflow: hidden;
-}
 
-.slider {
-    display: flex;
-    flex-direction: row;   /* WAJIB horizontal */
-    width: 100%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;       /* Setiap slide full 1 layar */
-    flex: 0 0 100%;        /* Supaya tidak turun ke bawah */
-    padding: 10px;
-}
-
-.slide iframe {
-    width: 100%;
-    height: 450px;
-    border-radius: 12px;
-}
 .swiper {
   width: 100%;
   padding: 40px 0;

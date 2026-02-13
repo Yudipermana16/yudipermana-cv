@@ -87,28 +87,8 @@
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
-    <script>
-    let currentSlide = 0;
 
-    function moveSlide(direction) {
-        const slides = document.querySelector('.slider');
-        const totalSlides = document.querySelectorAll('.slide').length;
-
-        currentSlide += direction;
-
-        if (currentSlide < 0) {
-            currentSlide = totalSlides - 1;
-        }
-
-        if (currentSlide >= totalSlides) {
-            currentSlide = 0;
-        }
-
-        slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
   var swiper = new Swiper(".mySwiper", {

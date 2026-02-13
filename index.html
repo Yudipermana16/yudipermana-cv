@@ -85,6 +85,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
     <script>
     let currentSlide = 0;
@@ -105,6 +106,39 @@
 
         slides.style.transform = `translateX(-${currentSlide * 100}%)`;
     }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  });
 </script>
 
 <body>
@@ -183,6 +217,44 @@
         </ul>
     </div>
 </section>
+
+<section>
+  <h2>Portfolio YouTube</h2>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="swiper-slide">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="swiper-slide">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="swiper-slide">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_4"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
     
 <section>
     <h2>Portfolio YouTube</h2>
